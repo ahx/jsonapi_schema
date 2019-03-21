@@ -8,7 +8,9 @@ Use this to validate a HTTP response body according to [JSON:API](http://jsonapi
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'json_api_schema-source'
+group :test, :development do
+  gem 'json_api_schema-source', source: 'https://gems.ivx.cloud'
+end
 ```
 
 And then execute:
