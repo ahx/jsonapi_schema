@@ -9,7 +9,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'json_api_schema-source', source: 'https://gems.ivx.cloud'
+  gem 'json_api_schema', source: 'https://gems.ivx.cloud'
 end
 ```
 
@@ -21,7 +21,7 @@ And then execute:
 
 ```ruby
 require 'json'
-require 'json_api_schema/source'
+require 'json_api_schema'
 
 schema = JSON.parse(File.read(JsonApiSchema::Source.schema_path))
 ```
@@ -44,4 +44,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ivx/json_api_schema-source.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ivx/json_api_schema.

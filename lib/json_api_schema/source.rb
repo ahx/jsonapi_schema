@@ -1,5 +1,3 @@
-require 'json_api_schema/source/version'
-
 module JsonApiSchema
   module Source
     SCHEMA_PATH = File.expand_path('./source/schema.json', File.dirname(__FILE__))

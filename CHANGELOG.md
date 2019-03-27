@@ -1,6 +1,8 @@
 #
 
-0.1.0
+- rename to json_api_schema
+
+  0.1.0
 
 - Initial release
 - Include http://jsonapi.org/schema loaded at 2019-03-21T10:24:55+01:00

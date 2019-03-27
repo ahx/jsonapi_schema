@@ -4,7 +4,7 @@ require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 
 task :version do
-  puts Gem::Specification.load('json_api_schema-source.gemspec').version
+  puts Gem::Specification.load('json_api_schema.gemspec').version
 end
 
 task :default => :spec

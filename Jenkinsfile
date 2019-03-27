@@ -1,4 +1,4 @@
-def name = 'json_api_schema-source'
+def name = 'json_api_schema'
 def app
 def version
 
