@@ -7,4 +7,4 @@ task :version do
   puts Gem::Specification.load('json_api_schema.gemspec').version
 end
 
-task :default => :spec
+task default: :spec
