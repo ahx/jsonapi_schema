@@ -1,5 +1,3 @@
-require 'json_api_schema/version'
-
 module JsonApiSchema
   MEDIA_TYPE = 'application/vnd.api+json'.freeze
 
