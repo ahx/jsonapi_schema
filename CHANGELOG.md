@@ -1,6 +1,9 @@
 #
 
+0.1.1
+
 - rename to json_api_schema
+- Add `JsonApiSchema::MEDIA_TYPE` (`"application/vnd.api+json"`)
 
   0.1.0
 
