@@ -23,7 +23,7 @@ And then execute:
 require 'json'
 require 'json_api_schema'
 
-schema = JSON.parse(File.read(JsonApiSchema::Source.schema_path))
+schema = JSON.parse(File.read(JsonApiSchema.schema_path))
 ```
 
 Validate your response using [json_schemer](http://rubygems.org/gems/json_schemer) (not part of this gem):

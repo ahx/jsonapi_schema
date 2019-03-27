@@ -1,13 +1,13 @@
 require 'json'
 
-RSpec.describe JsonApiSchema::Source do
+RSpec.describe JsonApiSchema do
   it 'has a version number' do
-    expect(JsonApiSchema::Source::VERSION).not_to be nil
+    expect(JsonApiSchema::VERSION).not_to be nil
   end
 
   describe '#file_path' do
     it 'returns the path to the JSON Schema' do
-      path = JsonApiSchema::Source.schema_path
+      path = JsonApiSchema.schema_path
       expect(File.exist?(path)).to be true
       expect(path).to start_with '/'
       schema = JSON.parse(File.read(path))
