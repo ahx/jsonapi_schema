@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    json_api_schema (0.1.1)
+    jsonapi_schema (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -27,7 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  json_api_schema!
+  jsonapi_schema!
   rake (~> 10.0)
   rspec (~> 3.0)
 

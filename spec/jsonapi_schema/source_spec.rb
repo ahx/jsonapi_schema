@@ -1,17 +1,17 @@
 require 'json'
 
-RSpec.describe JsonApiSchema do
+RSpec.describe JsonapiSchema do
   it 'has a version number' do
-    expect(JsonApiSchema::VERSION).not_to be nil
+    expect(JsonapiSchema::VERSION).not_to be nil
   end
 
   it 'has a MEDIA_TYPE constant' do
-    expect(JsonApiSchema::MEDIA_TYPE).not_to be nil
+    expect(JsonapiSchema::MEDIA_TYPE).not_to be nil
   end
 
   describe '#file_path' do
     it 'returns the path to the JSON Schema' do
-      path = JsonApiSchema.schema_path
+      path = JsonapiSchema.schema_path
       expect(File.exist?(path)).to be true
       expect(path).to start_with '/'
       schema = JSON.parse(File.read(path))

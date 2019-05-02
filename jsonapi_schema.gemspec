@@ -1,16 +1,16 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'json_api_schema/version'
+require 'jsonapi_schema/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'json_api_schema'
-  spec.version       = JsonApiSchema::VERSION
+  spec.name          = 'jsonapi_schema'
+  spec.version       = JsonapiSchema::VERSION
   spec.authors       = ['Andreas Haller']
   spec.email         = ['andreas.haller@invision.de']
 
   spec.summary       = 'JSON:API JSON Schema packed in a rubygem'
   spec.description   = 'Use this to validate JSON:API response bodies'
-  spec.homepage      = 'https://github.com/ivx/json_api_schema'
+  spec.homepage      = 'https://github.com/ivx/jsonapi_schema'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
     spec.metadata['homepage_uri'] = spec.homepage
     spec.metadata['source_code_uri'] = spec.homepage
-    spec.metadata['changelog_uri'] = 'https://github.com/ivx/json_api_schema/blob/master/CHANGELOG.md'
+    spec.metadata['changelog_uri'] = 'https://github.com/ivx/jsonapi_schema/blob/master/CHANGELOG.md'
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
       'public gem pushes.'

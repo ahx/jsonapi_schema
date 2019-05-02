@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'json_api_schema'
+require 'jsonapi_schema'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

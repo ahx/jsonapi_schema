@@ -1,3 +1,3 @@
-module JsonApiSchema
+module JsonapiSchema
   VERSION = '0.1.1'.freeze
 end
