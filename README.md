@@ -20,18 +20,19 @@ And then execute:
 ## Usage
 
 ```ruby
-require 'json'
-require 'jsonapi_schema'
+JsonapiSchema.schema_path # returns path to the schema file, a String
 
-schema = JSON.parse(File.read(JsonapiSchema.schema_path))
+JsonapiSchema.schema # returns the parsed object, a Hash
 ```
+
+`JsonapiSchema.schema` parses the file via [multi_json](https://rubygems.org/gems/multi_json).
 
 Validate your response using [json_schemer](http://rubygems.org/gems/json_schemer) (not part of this gem):
 
 ```ruby
 require 'json_schemer'
 
-schemer = JSONSchemer.schema(schema)
+schemer = JSONSchemer.schema(JsonapiSchema.schema)
 schemer.valid?(JSON.parse(last_response.body))
 # => true/false
 ```
