@@ -9,7 +9,7 @@ RSpec.describe JsonapiSchema do
     expect(JsonapiSchema::MEDIA_TYPE).not_to be nil
   end
 
-  describe '#file_path' do
+  describe '.schema_path' do
     it 'returns the path to the JSON Schema' do
       path = JsonapiSchema.schema_path
       expect(File.exist?(path)).to be true
