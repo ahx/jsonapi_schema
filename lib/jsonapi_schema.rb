@@ -1,3 +1,5 @@
+require 'multi_json'
+
 module JsonapiSchema
   MEDIA_TYPE = 'application/vnd.api+json'.freeze
 
@@ -8,5 +10,9 @@ module JsonapiSchema
 
   def self.schema_path
     SCHEMA_PATH
+  end
+
+  def self.schema
+    MultiJson.load(File.read(schema_path))
   end
 end

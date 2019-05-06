@@ -10,11 +10,18 @@ RSpec.describe JsonapiSchema do
   end
 
   describe '.schema_path' do
-    it 'returns the path to the JSON Schema' do
+    it 'returns the parsed object' do
       path = JsonapiSchema.schema_path
       expect(File.exist?(path)).to be true
       expect(path).to start_with '/'
       schema = JSON.parse(File.read(path))
+      expect(schema['title'] == 'JSON:API Schema')
+    end
+  end
+
+  describe '.schema' do
+    it 'returns the path to the JSON Schema' do
+      schema = JsonapiSchema.schema
       expect(schema['title'] == 'JSON:API Schema')
     end
   end
