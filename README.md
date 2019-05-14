@@ -23,6 +23,9 @@ And then execute:
 require 'json'
 require 'jsonapi_schema'
 
+JsonapiSchema::MEDIA_TYPE
+# => 'application/vnd.api+json'
+
 schema = JSON.parse(File.read(JsonapiSchema.schema_path))
 ```
 
