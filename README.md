@@ -1,4 +1,4 @@
-# JsonapiSchema::Source
+# JsonapiSchema
 
 This is the [JSON:API JSON Schema](http://jsonapi.org/schema) packaged as a rubygem.
 Use this to validate a HTTP response body according to [JSON:API](http://jsonapi.org).
