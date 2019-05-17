@@ -1,5 +1,7 @@
 # JsonapiSchema
 
+[![Build Status](https://travis-ci.org/ahx/jsonapi_schema.svg?branch=master)](https://travis-ci.org/ahx/jsonapi_schema)
+
 This is the [JSON:API JSON Schema](http://jsonapi.org/schema) packaged as a rubygem.
 Use this to validate a HTTP response body according to [JSON:API](http://jsonapi.org).
 
