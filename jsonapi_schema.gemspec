@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['andreas.haller@invision.de']
 
   spec.summary       = 'JSON:API JSON Schema packed in a rubygem'
-  spec.description   = 'Use this to validate JSON:API response bodies'
+  spec.description   = 'JSON:API JSON Schema packed in a rubygem'
   spec.homepage      = 'https://github.com/ahx/jsonapi_schema'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
