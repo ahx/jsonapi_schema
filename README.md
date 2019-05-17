@@ -30,8 +30,6 @@ JsonapiSchema::MEDIA_TYPE # alias: JsonapiSchema::CONTENT_TYPE
 JsonapiSchema.schema # returns the parsed object, a Hash
 ```
 
-`JsonapiSchema.schema` parses the file via [multi_json](https://rubygems.org/gems/multi_json).
-
 Validate your response using [json_schemer](http://rubygems.org/gems/json_schemer) (not part of this gem):
 
 ```ruby
