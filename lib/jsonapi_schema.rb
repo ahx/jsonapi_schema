@@ -1,7 +1,9 @@
-require 'multi_json'
+# frozen_string_literal: true
+
+require 'json'
 
 module JsonapiSchema
-  MEDIA_TYPE = 'application/vnd.api+json'.freeze
+  MEDIA_TYPE = 'application/vnd.api+json'
 
   SCHEMA_PATH = File.expand_path(
     './jsonapi_schema/source/schema.json',
@@ -13,6 +15,6 @@ module JsonapiSchema
   end
 
   def self.schema
-    @schema ||= MultiJson.load(File.read(schema_path))
+    @schema ||= JSON.parse(File.read(schema_path))
   end
 end
