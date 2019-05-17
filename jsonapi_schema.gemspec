@@ -7,6 +7,7 @@ require 'jsonapi_schema/version'
 Gem::Specification.new do |spec|
   spec.name          = 'jsonapi_schema'
   spec.version       = JsonapiSchema::VERSION
+  spec.licenses      = ['MIT']
   spec.authors       = ['Andreas Haller']
   spec.email         = ['andreas.haller@invision.de']
 
