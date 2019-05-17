@@ -9,7 +9,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'jsonapi_schema', source: 'https://gems.ivx.cloud'
+  gem 'jsonapi_schema'
 end
 ```
 
