@@ -22,7 +22,7 @@ And then execute:
 ```ruby
 JsonapiSchema.schema_path # returns path to the schema file, a String
 
-JsonapiSchema::MEDIA_TYPE
+JsonapiSchema::MEDIA_TYPE # alias: JsonapiSchema::CONTENT_TYPE
 # => 'application/vnd.api+json'
 
 JsonapiSchema.schema # returns the parsed object, a Hash

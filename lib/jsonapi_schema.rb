@@ -3,7 +3,7 @@
 require 'json'
 
 module JsonapiSchema
-  MEDIA_TYPE = 'application/vnd.api+json'
+  MEDIA_TYPE = CONTENT_TYPE = 'application/vnd.api+json'
 
   SCHEMA_PATH = File.expand_path(
     './jsonapi_schema/source/schema.json',
