@@ -13,6 +13,6 @@ module JsonapiSchema
   end
 
   def self.schema
-    MultiJson.load(File.read(schema_path))
+    @schema ||= MultiJson.load(File.read(schema_path))
   end
 end
