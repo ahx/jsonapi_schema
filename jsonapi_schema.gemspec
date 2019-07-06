@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.version       = JsonapiSchema::VERSION
   spec.licenses      = ['MIT']
   spec.authors       = ['Andreas Haller']
-  spec.email         = ['andreas.haller@invision.de']
+  spec.email         = ['andreas.haller@posteo.de']
 
   spec.summary       = 'JSON:API JSON Schema packed in a rubygem'
   spec.description   = 'JSON:API JSON Schema packed in a rubygem'
